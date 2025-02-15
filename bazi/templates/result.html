@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>墨隐国学 - 测算结果</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: white; /* 背景颜色为白色 */
+            color: black; /* 文字颜色为黑色 */
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-image: none; /* 去除背景图片 */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            color: black; /* 文字颜色为黑色 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">墨隐国学 - 测算结果</h1>
+        <div class="result">
+            <pre>{{ result }}</pre>
+        </div>
+        <a href="{{ url_for('index') }}" class="btn btn-primary btn-lg btn-block">返回首页</a>
+    </div>
+</body>
+</html>
