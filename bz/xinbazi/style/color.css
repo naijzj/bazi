@@ -1,0 +1,316 @@
+.木,
+.甲,
+.寅,
+.阳木 {
+    background-color: #54E099 !important;
+    color: #003524 !important;
+}
+
+.乙,
+.卯,
+.阴木 {
+    background-color: #008B50 !important;
+    color: #003524 !important;
+}
+
+.火,
+.丙,
+.午,
+.阳火 {
+    background-color: #F83251 !important;
+    color: #42210b !important;
+}
+
+.丁,
+.巳,
+.阴火 {
+    background-color: #B91C22 !important;
+    color: #42210b !important;
+}
+
+.土,
+.戊,
+.辰,
+.戌,
+.阳土 {
+    background-color: #FFD740 !important;
+    color: #42210B !important;
+}
+
+.己,
+.丑,
+.未,
+.阴土 {
+    background-color: #D19637 !important;
+    color: #42210B !important;
+}
+
+.金,
+.庚,
+.申,
+.阳金 {
+    background-color: #F8F6E4 !important;
+    color: #000 !important;
+}
+
+.辛,
+.酉,
+.阴金 {
+    background-color: #DADBC6 !important;
+    color: #000 !important;
+}
+
+.水,
+.壬,
+.子,
+.阳水 {
+    background-color: #353C4F !important;
+    color: #FFF !important;
+}
+
+.癸,
+.亥,
+.阴水 {
+    background-color: #00141F !important;
+    color: #FFF !important;
+}
+
+.空 {
+    /* background-color: #008eff !important; */
+    color: #c0c0c0 !important;
+}
+
+
+
+
+/* 十二长生 */
+
+.长生 {
+    opacity: 0.5;
+}
+.地支 .沐浴 {
+    opacity: 0.6;
+    background-color: transparent;
+}
+
+.冠带 {
+    opacity: 0.8;
+}
+
+.临官 {
+    opacity: 0.9;
+}
+
+.帝旺 {
+    opacity: 1;
+}
+
+.衰 {
+    opacity: 0.7;
+}
+
+.病 {
+    opacity: 0.5;
+}
+
+.死 {
+    opacity: 0.3;
+}
+
+.墓 {
+    opacity: 0.3;
+}
+
+.绝 {
+    opacity: 0.3;
+}
+
+.胎 {
+    opacity: 0.4;
+}
+
+.养 {
+    opacity: 0.5;
+}
+
+
+
+/* 刑冲破害合 */
+
+.冲, .六冲 {
+    background-color: #c93d3a !important;
+    color: #FFF !important;
+}
+
+.破, .六破 {
+    background-color: #243136 !important;
+    color: #FFF !important;
+}
+
+.刑, .三刑, .自刑 {
+    background-color: #4a6887 !important;
+    color: #FFF !important;
+}
+
+.害, .六害 {
+    background-color: #519ea6 !important;
+    color: #FFF !important;
+}
+
+.暗合 {
+    background-color: #d8d8d8 !important;
+    color: #717171 !important;
+}
+
+
+.伏吟 {
+    background-color: #736d4d !important;
+    color: #FFF !important;
+}
+
+.反吟 {
+    background-color: #644b6a !important;
+    color: #FFF !important;
+}
+
+.凶煞 {
+    background-color: #FED7DB !important;
+}
+
+.吉神 {
+    background-color: #D3EAF6 !important;
+}
+
+.男 {
+    background-color: #5297eb;
+    color: #FFF;
+}
+
+.女 {
+    background-color: #f18c4a;
+    color: #FFF;
+}
+
+
+.增益 {
+    color: #6fc297 !important;
+}
+
+.消耗 {
+    color: #dc3466 !important;
+}
+
+.增益背景, .神 {
+    background-color: #6fc297 !important;
+}
+
+.消耗背景, .煞 {
+    background-color: #f46749 !important;
+}
+
+
+.神:hover {
+    background-color: #6fc297;
+}
+
+.煞:hover {
+    background-color: #d8533d;
+}
+
+
+
+
+
+
+.天乙,
+.福星,
+.文昌,
+.国印,
+.太极,
+.金舆,
+.禄神,
+.天官,
+.天福,
+.天喜,
+.天厨,
+.天德,
+.月德,
+.天合,
+.月合,
+.华盖,
+.将星,
+.日贵,
+.日德,
+.魁罡,
+.天医,
+.天赦,
+.金神,
+.词馆,
+.进神,
+.天三奇,
+.地三奇,
+.人三奇,
+.十灵日,
+.六秀日 {
+    background-color: #e3f7ed !important;
+}
+.天三奇 .筛选标题,
+.地三奇 .筛选标题,
+.人三奇 .筛选标题,
+.十灵日 .筛选标题,
+.六秀日 .筛选标题{
+    font-size: 0.65rem;
+}
+
+@media (min-width: 700px) {
+.天三奇 .筛选标题,
+.地三奇 .筛选标题,
+.人三奇 .筛选标题,
+.十灵日 .筛选标题,
+.六秀日 .筛选标题{
+    font-size: 0.9rem;
+}
+}
+
+
+.元辰,
+.羊刃,
+.墓煞,
+.隔角,
+.丧门,
+.吊客,
+.披麻,
+.勾,
+.绞,
+.孤辰,
+.寡宿,
+.地网,
+.天罗,
+.劫煞,
+.亡神,
+.灾煞,
+.六厄,
+.差错,
+.九丑,
+.四废,
+.天转,
+.地转,
+.五鬼,
+.八专,
+.孤鸾,
+.飞刃,
+.天狗,
+.红艳,
+.沐浴,
+.桃花,
+.咸池,
+.红鸾,
+.驿马 {
+    background-color: #ffeeeb!important;
+    opacity: 1;
+}
+
+.地支 .沐浴,.天干 .沐浴 {
+    opacity: 0.6;
+    background-color: transparent!important;
+}

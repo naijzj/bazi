@@ -1,0 +1,1683 @@
+/* 主题UI */
+html,
+body {
+    background-color: #f4f4f4;
+    min-width: 320px;
+    padding-top: 0rem;
+    padding-bottom: 50px;
+
+}
+
+.字体 {
+    font-family: font;
+}
+
+.页面_头部 {
+    display: none;
+
+}
+
+.标识_口号 {
+    margin: 0;
+    line-height: 1.2rem;
+    padding: 0 1rem 0 1.5rem;
+
+}
+
+.标识_口号 img {
+    width: 1.2rem;
+    position: absolute;
+    left: 0.5rem;
+}
+
+.标识_口号 h1 {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #ECD7AB;
+
+
+}
+
+.标识_口号 p {
+    display: none;
+    color: #999;
+}
+
+.头部_菜单 {
+    text-align: right;
+    font-size: 0.85rem;
+    flex: 1;
+}
+
+.头部_菜单 a,
+.头部_菜单 a:active,
+.头部_菜单 a:link {
+    color: #999;
+    padding: 0.3rem 0.3rem;
+    line-height: 1.5rem;
+    display: inline-block;
+}
+
+.头部_菜单 a:hover {
+    color: #FFF;
+}
+
+.头部_菜单 a.激活 {
+    font-size: 1.0rem;
+    color: #FFF;
+    background-color: #2E2E2E;
+}
+
+
+.命主 {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    position: relative;
+    color: #EADDC2;
+    background-color: #090301;
+    padding: 1rem 0;
+
+}
+
+
+
+.命主_信息 {
+    margin: 0 0.5rem;
+}
+
+.命主_姓名 {
+    font-size: 1.2rem;
+}
+
+.命主_阴阳 {
+    padding: 0.1rem 0.3rem;
+    margin: 0 0.2rem;
+    font-size: 0.9rem;
+    display: inline-block;
+    border-radius: 0.2rem;
+    font-weight: bolder;
+}
+
+.命主 .纯阴纯阳 {
+    font-size: 0.9rem;
+    font-weight: normal;
+
+}
+
+
+.命主_生辰 {
+    margin: 0 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.命主 .二维码{
+    position: absolute;
+    bottom: 0.6rem;
+    right: 0.5rem;
+    width: 66px;
+    height: 66px;
+    padding: 2px;
+    background-color: #FFF;
+    
+}
+.命主 .二维码 canvas {
+    display: block;
+    width: 100%!important;
+}
+
+.命主 .二维码 img {
+    display: block !important;
+    width: 100%!important;
+}
+
+
+
+.按钮组{
+    position: absolute;
+    right: 5px;
+    top: 15px;
+
+}
+
+.按钮组 a {
+    margin: 0 0.1rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+}
+
+.按钮组 a:hover {
+    background-size: 25px;
+}
+
+.按钮组 a span {
+    /* display: none; */
+    color: #EADDC2;
+    font-size: 0.9rem;
+    margin: 0 0.1rem;
+    font-weight: normal;
+
+
+}
+.按钮组 a:hover span{
+    text-decoration:underline;
+}
+.按钮_删除 {
+    /* position: absolute;
+    right: 0.0rem;
+    top: 0.8rem;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/shanchu.svg);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: center center; */
+}
+
+.按钮_保存 {
+    position: absolute;
+    right: 2.0rem;
+    top: 0.8rem;
+    width: 20px;
+    height: 20px;
+    /* background-image: url(../images/baocun.svg);
+    background-repeat: no-repeat;
+    background-size: 17px;
+    background-position: center center; */
+}
+
+a.按钮_二维码 {
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 1rem;
+    background-color: #FFF;
+}
+
+
+a.按钮_二维码 svg {
+    display: none;
+}
+
+a.按钮_二维码 canvas {
+    width: 60px;
+    height: 60px;
+    padding: 3px;
+    background-color: #FFF;
+}
+
+a.按钮_二维码 img {
+    width: 100%;
+    height: 100%;
+    padding: 0.2rem;
+    background-color: #FFF;
+}
+
+
+
+
+.页面_主体 {
+    padding: 0 0 0.5rem 0;
+    margin: auto;
+}
+
+.区块_容器 {
+    overflow: hidden;
+}
+
+.区块_容器_二级 {
+    background-color: #FFF;
+}
+
+.区块_容器_二级 .区块_标题 {
+    border-top: 2px solid #e6e6e6;
+    position: relative;
+    padding: 0.7rem 0.5rem;
+}
+
+.区块_容器_二级 .区块_标题 h3 {
+    font-size: 0.9rem;
+}
+
+.区块_容器_二级 .区块_标题 功能 {
+    position: absolute;
+    right: 0.5rem;
+    bottom: 3px;
+}
+
+
+
+.区块_容器_二级 .区块_标题_弱 {
+    border-top: 2px solid #f5f5f5;
+    position: relative;
+    padding: 0.7rem 0rem;
+}
+
+.区块_容器_二级 .区块_标题_弱 h3 {
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.区块_容器_二级 .区块_标题_弱 div {
+    position: absolute;
+    right: 0rem;
+    bottom: 3px;
+}
+
+.区块_容器_二级 .区块_标题_二级 {
+    padding: 0.2rem 0.5rem;
+
+}
+
+.区块_容器_二级 .区块_标题_二级 h3 {
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+
+.区块_底部 {
+    height: auto;
+    /* 展开时移除高度限制 */
+    padding: 0.7rem 0.5rem;
+    /* background-color: #e5e5e5; */
+    text-align: right;
+
+}
+
+.内容_边距 {
+    padding: 0.8rem 1.5rem;
+}
+
+
+
+.按钮_设置 {
+    background-image: url(../images/shezhi.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    width: 30px;
+    height: 30px;
+    transition: background-size 0.1s ease, background-size 0.1s ease;
+}
+
+.按钮_设置 span {
+    display: none;
+}
+
+.按钮_设置:hover {
+    background-size: 23px;
+}
+
+
+.按钮_下拉 {
+    background-image: url(../images/tubiao_xia.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: background-size 0.1s ease, background-size 0.1s ease;
+}
+
+.按钮_下拉 span {
+    display: none;
+}
+
+.按钮_下拉:hover {
+    background-size: 23px;
+}
+
+
+.按钮_下拉_激活 {
+    background-image: url(../images/tubiao_shang.svg);
+}
+
+.图标色 {
+    fill: #bfc0c0;
+}
+
+.区块_内容 {
+    padding: 0.5rem 0;
+    margin-bottom: 0.5rem;
+}
+
+.区块_内容.隐藏 {
+    overflow: hidden;
+    height: 0;
+    padding: 0;
+
+}
+
+.版权信息 {
+    font-size: 0.75rem;
+    text-align: center;
+    color: #999;
+    margin-top: 1.0rem;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.封建迷信 {
+    font-size: 0.55rem;
+    text-align: center;
+    display: inline;
+    color: #999;
+    padding: 0.5rem 0 0.5rem 0;
+    
+}
+
+
+.十神卡片{
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+.十神卡片 img{
+    width: 96%;
+    margin: 0.5rem auto;
+}
+
+
+
+/* 弹窗 开始*/
+.弹窗_主体 {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.弹窗_主体 .弹窗_容器 {
+    background-color: #FFF;
+    margin: 5% auto 5% auto;
+    border: 1px solid #888;
+    border-radius: 0.2rem;
+    width: 98%;
+    max-width: 600px;
+    min-width: 300px;
+    margin-bottom: 70px;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.3);
+
+}
+
+.弹窗_主体 .内容_容器 .容器内边距 {
+    padding: 0.0rem 1.0rem;
+}
+
+.弹窗_主体 .容器_标题 {
+    padding: 1.0rem 1.0rem;
+    position: relative;
+}
+
+.弹窗_主体 .容器_标题 .标题 {
+    color: #000;
+    font-weight: bolder;
+}
+
+.弹窗_主体 .容器_底部 {
+    padding: 0.7rem 0.7rem;
+    /* background-color: #e5e5e5; */
+    text-align: right;
+}
+
+.弹窗_主体 .按钮_弹窗关闭 {
+    position: absolute;
+    right: 1.0rem;
+    top: 0.9rem;
+    background-image: url('data:image/svg+xml;charset=utf-8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+CjxwYXRoIHN0eWxlPSJmaWxsOiNCRkMwQzA7IiBkPSJtMTkuNzMsMTguNDJsLTguNDItOC40MkwxOS43MywxLjU4Yy4zNi0uMzYuMzYtLjk1LDAtMS4zMSwwLDAsMCwwLDAsMC0uMzYtLjM2LS45NS0uMzYtMS4zMSwwLDAsMCwwLDAsMCwwbC04LjQyLDguNDJMMS41OC4yN2MtLjM2LS4zNi0uOTUtLjM2LTEuMzEsMCwwLDAsMCwwLDAsMC0uMzYuMzYtLjM2Ljk1LDAsMS4zMSwwLDAsMCwwLDAsMGw4LjQyLDguNDJMLjI3LDE4LjQyYy0uMzYuMzYtLjM2Ljk1LDAsMS4zMS4xNy4xNy40MS4yNy42Ni4yNy4yNCwwLC40Ny0uMDkuNjYtLjI3bDguNDItOC40Miw4LjQyLDguNDJjLjE4LjE4LjQyLjI3LjY2LjI3cy40Ny0uMDkuNjYtLjI3Yy4zNi0uMzYuMzYtLjk1LDAtMS4zMSwwLDAsMCwwLDAsMGgwWiIvPgo8L3N2Zz4=');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center center;
+    border: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: #FFF;
+
+}
+
+.弹窗_主体 .按钮_弹窗关闭 span {
+    display: none;
+}
+
+
+
+
+/* 弹窗 结束*/
+
+
+
+/* 按钮开始 */
+.按钮_确认,
+.按钮_取消,
+.按钮_普通 {
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1.0rem;
+    border-radius: 0.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.按钮_确认:hover,
+.按钮_取消:hover,
+.按钮_普通:hover {
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.按钮_确认 {
+    border: 1px solid #825133;
+    background-color: #663D26;
+
+    color: #EBDDC9;
+}
+
+.按钮_确认:hover {
+    border: 1px solid #603720;
+    background-color: #825133;
+    color: #FFF;
+}
+
+.按钮_取消 {
+    border: 1px solid #F5F5F5;
+    background-color: #FFF;
+}
+
+.按钮_取消:hover {
+    border: 1px solid #DDD;
+    background-color: #FFF;
+}
+
+.按钮_普通 {
+    border: 1px solid #c69e87;
+    background-color: #FFF;
+    color: #825133;
+}
+
+.按钮_普通:hover {
+    border: 1px solid #825133;
+    background-color: #FFF;
+    color: #000;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* 按钮结束 */
+
+
+
+/* 选项卡开始 */
+.选项卡_按钮组 {
+    display: flex;
+}
+
+
+.选项卡_按钮组 button {
+    border: none;
+    font-size: 0.9rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    padding: 0.5rem 0.0rem;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-right: 1px;
+    color: #333;
+
+}
+
+.选项卡_按钮组 button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.选项卡_按钮组 button:last-child {
+    margin-right: 0;
+
+}
+
+.选项卡_按钮组 .激活 {
+    background-color: #FFF;
+    border-bottom: 2px solid #FFF;
+    border-top: none;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    color: #333;
+    /* box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.3); */
+}
+
+.选项卡_按钮组 .激活:hover {
+    background-color: #FFF;
+}
+
+.选项卡_容器 {
+    background-color: #FFF;
+    padding: 0.5rem 1.0rem;
+}
+
+
+
+/* 选项卡结束 */
+
+/* 弹窗信息开始 */
+.弹窗_天干信息 {
+    padding: 1.5rem 1rem 1rem 5rem;
+    position: relative;
+}
+
+.弹窗_天干信息 .天干 {
+    font-size: 3.5rem;
+    left: 1.0rem;
+    position: absolute;
+    font-weight: normal;
+}
+
+.弹窗_天干信息 .旺象长生 {
+    padding: 0.2rem 0;
+}
+
+.弹窗_天干信息 .能量 {
+    font-size: 1.4rem;
+    padding: 0.2rem 0;
+}
+
+.弹窗_天干信息 .十神 {
+    position: absolute;
+    font-size: 1.5rem;
+    right: 1.0rem;
+    top: 1.5rem;
+}
+
+.弹窗_天干信息 .能量值 {
+
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0.3rem;
+}
+
+
+
+.弹窗_地支信息 {
+    padding: 1.5rem 1rem 1rem 5rem;
+    position: relative;
+}
+
+.弹窗_地支信息 .地支 {
+    font-size: 3.5rem;
+    left: 1.0rem;
+    position: absolute;
+    font-weight: normal;
+}
+
+.弹窗_地支信息 .阴阳五行 {
+    padding: 0.2rem 0;
+}
+
+.弹窗_地支信息 .时间 {
+    font-size: 1.4rem;
+    padding: 0.2rem 0;
+}
+
+.弹窗_地支信息 .属相 {
+    position: absolute;
+    font-size: 1.5rem;
+    right: 1.0rem;
+    top: 1.5rem;
+}
+
+.弹窗_地支信息 .能量值 {
+
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0.3rem;
+}
+
+
+/* 弹窗信息结束 */
+
+/* 列表_能量调整 开始 */
+
+
+.列表_能量调整 li {
+    position: relative;
+    padding: 0.2rem 0.2rem 0.2rem 25px;
+}
+
+.列表_能量调整 li span {
+    position: absolute;
+    left: 0;
+    display: block;
+    text-align: center;
+    width: 14px;
+}
+
+.列表_能量调整 li div {
+    display: inline-block;
+}
+
+.列表_能量调整 li p {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+
+/* 列表_能量调整 结束 */
+
+
+
+/* 能量值_容器 开始 */
+.能量值_容器 {
+    position: relative;
+    padding: 1.0rem 0.5rem 2.0rem 50px;
+}
+
+.能量值_容器 span {
+    position: absolute;
+    left: 0;
+    display: block;
+    text-align: center;
+    width: 14px;
+    font-size: 0.9rem;
+}
+
+.能量值_容器 .能量值 {
+    height: 5px;
+    margin-top: 5px;
+}
+
+/* 能量值_容器 结束 */
+
+
+.筛选列表 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.筛选列表 .列 {
+    flex: 0 0 calc(100% / 3);
+    height: 35px;
+}
+
+
+
+.筛选列表 .筛选块 {
+
+    position: relative;
+    background-color: #f7f8f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    line-height: 30px;
+    display: inline-block;
+}
+
+.筛选列表 .筛选块 input {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.筛选列表 .筛选块 .筛选标题 {
+    display: inline-block;
+    height: 30px;
+    padding: 0px 20px 0px 35px;
+    font-size: 0.75rem;
+}
+
+.筛选列表 .筛选块 .筛选框 {
+    position: absolute;
+    top: 3px;
+    right: auto;
+    left: 3px;
+    width: 24px;
+    /* 自定义 checkbox 的宽度 */
+    height: 24px;
+    /* 自定义 checkbox 的高度 */
+    border-radius: 2rem;
+    background-image: url(../images/guan.svg);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: center center;
+    box-shadow: none;
+
+}
+
+.筛选列表 .筛选块 input[type="checkbox"]:checked {
+    left: 0;
+
+}
+
+.筛选列表 .筛选块 input[type="checkbox"]:checked~.筛选标题 {
+    padding: 0px 20px 0px 35px;
+
+}
+
+.筛选列表 .筛选块 input[type="checkbox"]:checked+.筛选框 {
+    background-image: url(../images/kai.svg);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center center;
+    background-color: #FFF;
+    /* background-color: #4bc674; */
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+    right: auto;
+    left: 3px;
+}
+
+
+.神煞_信息 {
+    line-height: 150%;
+}
+
+.神煞_信息 p {
+    margin-bottom: 1.0rem;
+}
+
+
+.象_信息 {
+    line-height: 150%;
+}
+
+.象_信息 span {
+    padding: 0.3rem;
+    display: inline-block;
+    background-color: #f7f8f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.3rem;
+    margin: 0 0.3rem 0.3rem 0;
+}
+
+
+.信息表 {
+    line-height: 150%;
+}
+
+.信息表 span {
+    padding: 0.3rem;
+    display: inline-block;
+    background-color: #f7f8f8;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.3rem;
+    margin: 0 0.3rem 0.3rem 0;
+}
+
+
+
+
+
+.消息反馈 {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.消息反馈 .信息 {
+    display: block;
+    position: static;
+    padding: 1.0rem;
+}
+
+.消息反馈 .背景 {
+    background-color: #FFF;
+    border-radius: 0.3rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.0rem;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.30);
+    border: 1px solid #EEE;
+}
+
+.消息反馈 .失败 {
+    color: #842029;
+}
+
+.消息反馈 .成功 {
+    color: #0f5132;
+}
+
+
+.正在加载 {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.正在加载 .信息 {
+    display: block;
+    position: static;
+    padding: 1.0rem;
+}
+
+.正在加载 .背景 {
+    background-color: #FFF;
+    border-radius: 0.3rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.0rem;
+}
+
+
+.加载动画 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #96d5ff;
+    border-radius: 50%;
+
+}
+
+.加载动画 div {
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    border-top-color: #3498db;
+    animation: 旋转360 2s linear infinite;
+    /* box-sizing: border-box; */
+
+}
+
+
+
+.移动端菜单 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: #FFF;
+    padding: 0.3rem 0 0.7rem 0;
+    box-shadow: 0px -3px 3px 0px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.移动端菜单 a,
+.移动端菜单 div {
+    text-align: center;
+    flex: 1;
+    color: #000;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+.移动端菜单 a svg,
+.移动端菜单 div svg {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 0.1rem auto;
+}
+
+.移动端菜单 a span,
+.移动端菜单 div span {
+    font-size: 0.8rem;
+}
+
+.移动端菜单 a.激活,
+.移动端菜单 div.激活 {
+    color: #000;
+    font-weight: bolder;
+}
+
+.移动端菜单 a.激活 svg,
+.移动端菜单 div.激活 svg {
+    fill: #825133;
+}
+
+
+
+.已选择岁运 {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    color: #333;
+}
+
+/* .菜单_命盘 {}
+.菜单_岁运 {}
+.菜单_简批 {}
+.菜单_解盘 {} */
+
+
+.备案信息 {
+    padding: 0 0.5rem;
+    text-align: center;
+    display: block;
+
+}
+
+.备案信息 a {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAElElEQVR42pXTY2Ac6wLG8Tk2a9s2w9rG5sYuYjvZpLZt27Ft27ZRt/+7Jx9qPmP95qXwqUBxx5ace9r399tH3dhmnVCTcGU9pHUVvjY8CZDLvG1z5ZTuikcnVUbitHoyLmvmcs5uKUfXKD5LvW5/kyfx878M49HPPruVmdh+AvtUxxO8bgwlqn2oNhpGjusarp81YfK/k/DYthpo+ukzWHXXx7HWAQvHLWKPtYgm24Ekff8ziZN6krFwMLHffsOzUzO5cn8Pyycu42X6rruQ8/MHsWfkDiq4p/tkfOcFKIu0eb5zKIm9OpPSqyNxQzuTMWsgcR3+IeD338BXlXUmLsj3nU5lkHVpdcaOAe+BPDo0bv92MwTBiUs7RNQrdyf5u99IHdWD1M4dSPj9H5In9iVC+JYqlUH4eNojCPrs2GjB40zxyLew+lSvri/8lgft3SF56XsLHjjKUDizOxnCj6T26ECaVC/SZHpJzjsRJwikSfckPdoC4RsDbK2toG6j78un1b1egQk3zQ0enZ/EuSMuCII994+s5qF4PDHCD0SIBpN8UIoi/yXk75xFQrtfqTEaS0ygUWsJD+x2hqSVVOfcdX4FZnluOlxxaCwhN20Rft6Dvro6T4On47mgL6HS3UjRHU2G2WSy9CaQtnUmFGpgpakqAa0I8dlE821ZigN2nXoFZlzWK8naOJGGSAO6Sh/i+x/08Jo/kEqxFCmzBxP1X5VVxpAk259ig/EkaUnx2486dBi5hcZ0S/IPTCLvlk7W6xJeV2+JtZwMD+ZgvGF/659dhb95MeRX0jRGELK0LylmEygTy/BiWFv8hH8QhLWssd8JIctI2iRFkfea/FdgsavjnZxT8jyP1iTJexNCl53MFyZx588/Ce74K6ED2hAt2TLnDSJaehhrvh2P8Lc1ka6WPEs0oOjucmpiNh54AxSHZe+Ro/DKKkjUxmXXkdbeFr7RRhDUWPjnQlS7L+Z3QUlyrSPZLDG2FkOmEiUPlCi6OpeqCKvgV2B5qO2z9JOrSduzjKJ9UjRG6ZHqb8l+C0XWW23l/jltYq4vRVHFkpULDTAxF1MTqE75aSmyjs2g6NY86jIcql+Bj5siFEq8l5J9fj4pu2eRYjqQx8GrIUsV0hfwPGQJ9bdmQ7wC1OlBkohc59GSd2dScHcplZGKPKl9IP321GuOV6wIV64v9V9BorMUqTunUhujRZWXIqV3llDuJaI+RpOGpDXkHplJ5sG5VETqURyoV91UcW268G4a8sLkCm7rlFWEKVIRokap60qq/FdRFaJERYAadZFqVPqsJu/MLErdRdQmG1IWrE32JVFVTd6p98HmvG2ejwpNqU03o9BVheJ7ClT4KFB0ezEV/ipUuC0l9/A08iXNUuqhQKmk5NUxujQVG9NUsffae+CzRv9fK9Od9xV7i5rLPRbRGLGSWl8Jdmce1ZLr8ptzWktcG65Aud9CSbupU5PrWFBXfs72UZP7t8LHkrTPsG2ky/+Ughykj+dcWRaadXxJYtH1ZcVlDxSLcy8phpZ5r/euSjy8PeOWeHb8NaP3oP8D8yMgoBz5Ld4AAAAASUVORK5CYII=");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 12px;
+    padding: 0 0 0 15px;
+    font-size: 0.55rem;
+    color: #999;
+}
+
+
+.区块_容器_二级 .区块_标题 {
+    /* border-top:none;
+    border-bottom: 2px solid #e6e6e6; */
+    position: relative;
+    padding: 0.7rem 0.3rem;
+}
+
+
+
+
+.区块_容器_二级 .区块_标题 h3 {
+    font-size: 1.0rem;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    /* font-weight: normal; */
+}
+
+.区块_容器_二级 .区块_标题 .功能 {
+    position: absolute;
+    right: 5px;
+    bottom: 3px;
+}
+
+.区块_内容 {
+    height: auto;
+    padding: 0.3rem 0.3rem;
+    /* 展开时移除高度限制 */
+}
+
+.链接_注册登录 {
+    text-align: center;
+    display: block;
+    padding: 0.5rem;
+    color: #825133;
+}
+
+.链接_注册登录:hover {
+    text-decoration: underline;
+}
+
+.页面标题 {
+    font-size: 1.6rem;
+    padding: 0.5rem 0;
+}
+
+.消息提醒 {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.成功信息 {
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+}
+
+.警告信息 {
+    color: #664d03;
+    background-color: #fff3cd;
+    border-color: #ffecb5;
+}
+
+.错误信息 {
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+}
+
+
+
+
+.微信模块 {
+    background-image: url(../images/wx.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 110px 110px;
+    padding: 0px 1.0rem 1.0rem 130px;
+    margin: 1.0rem;
+}
+
+.微信模块 .添加微信 {
+    list-style-type: decimal;
+    /* 确保使用数字作为列表项标记 */
+    line-height: 150%;
+    margin: 0px 1rem 10px 15px;
+    font-size: 0.8rem;
+    color: #333;
+}
+
+.微信模块 .微信号 {
+    background-image: url(../images/weixin.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 35px 35px;
+    padding: 3px 1.0rem 0px 45px;
+    height: 40px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.微信模块 .微信号 p {
+    padding: 0.2rem 0;
+    font-size: 0.9rem;
+}
+
+.批八字 {
+    padding: 0px 1.0rem 0px 0px;
+    margin: 1.0rem;
+
+}
+
+.批八字 .标题 {
+    background-image: url(../images/pibazi.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 35px 35px;
+    padding: 0px 1.0rem 0px 45px;
+    font-size: 1.2rem;
+    height: 40px;
+    line-height: 35px;
+    margin-bottom: 10px;
+    margin-top: 0.2rem;
+}
+
+.批八字 .标题 p {}
+
+.批八字 .项目 {
+    list-style-type: decimal;
+    /* 确保使用数字作为列表项标记 */
+    line-height: 150%;
+    margin: 0 1rem 10px 15px;
+    font-size: 0.8rem;
+}
+
+
+.升级会员 {
+    background-image: url(../images/vip.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 55px 55px;
+    padding: 60px 0 0rem 0;
+}
+
+.会员权益 {
+    list-style-type: decimal;
+    /* 确保使用数字作为列表项标记 */
+    line-height: 170%;
+    margin: 0 1rem 0px 15px;
+    font-size: 1.1rem;
+    padding: 2.0rem 1.0rem 2.0rem 1.0rem;
+    color: #333;
+}
+
+.会员价格 {
+    padding: 0.5rem;
+    display: block;
+    font-size: 1.0rem;
+    font-weight: normal;
+}
+
+.弹性布局_容器 {
+    display: flex;
+}
+
+.弹性布局_元素 {
+    flex: 1 1;
+}
+
+.vip用户 {
+    background-image: url(../images/vip.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 22px 22px;
+    padding: 0 0 0 30px;
+    display: inline-block;
+}
+
+.待开发 {
+
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+
+}
+
+
+
+.解锁查看{
+    text-align: center;
+    margin: 2.0rem 1.0rem;
+}
+.解锁查看 p{
+    color:#999;
+    background-image: url(../images/suoding.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-color: transparent;
+    padding: 0 0 0 20px;
+    display: inline-block;
+    margin: auto;
+}
+
+.解锁{}
+.解锁 .项目列表{
+    text-align: center;
+    display: flex;
+    margin: 1rem;
+    /* padding: 0 10%; */
+}
+.解锁 .项目列表 div{
+    flex: 1;
+    border: 3px solid #f5f5f5;
+    margin: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+}
+.解锁 .项目列表 .激活{
+    border: 3px solid #fbb03b;
+}
+.解锁 .项目列表 .激活 .价格{
+    color: #fbb03b;
+}
+.解锁 .项目列表 .项目{
+    color: #1a1a1a;
+    font-size: 0.9rem;
+    font-weight: normal;
+    padding: 0.5rem;
+}
+.解锁 .项目列表 .价格{
+    color: #333;
+    font-size: 1.5rem;
+}
+.解锁 .项目列表 .价格 span{
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.解锁 .项目列表 .描述{
+    color: #808080;
+    font-size: 0.75rem;
+    padding: 0.5rem;
+}
+
+
+
+.解锁{}
+.解锁 .支付列表 .支付{
+    text-align: center;
+    margin: 1.0rem;
+}
+
+.解锁 .支付列表 .描述{
+    font-size: 1.1rem;
+    color: #633d26;
+    line-height: 125%;
+}
+.解锁 .支付列表 .价格{
+    font-size: 2.0rem;
+    display: block;
+    padding: 1.0rem;
+}
+.解锁 .支付列表 .价格 span{
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+.解锁 .支付列表 .按钮{
+    background-color: #34bc1b;
+    color: #FFF;
+    border-radius: 2.5rem;
+    height: 40px;
+    line-height: 40px;
+    display:inline-block;
+    margin: 0.7em auto;
+    position: relative;
+    padding:0 30px 0 130px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+.解锁 .支付列表 .按钮 span{
+    background-image: url(../images/pay.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-color: transparent;
+    font-size: 0.90rem;
+    color: #101010;
+    padding: 0 10px 0 30px;
+    background-color: #FFF;
+    border-radius: 2rem;
+    position: absolute;
+    display: block;
+    width: 70px;
+    left: 3px;
+    top: 3px;
+    line-height: 34px;
+    
+}
+
+
+/* 媒体查询，适用于宽度大于或等于600px的设备 */
+@media (min-width: 700px) {
+    .十神卡片{
+        text-align: center;
+
+    }
+    .十神卡片 img{
+        width: 80%;
+        margin: 1.5rem auto;
+    }
+    .移动端显示 {
+        display: none;
+    }
+
+    .移动端菜单 {
+        display: none;
+    }
+
+    html,
+    body {
+        background-color: #d7d7d7;
+        padding: 2rem 10px 10px 10px;
+        min-width: 960px;
+        background-image: url(../images/bg.png);
+        background-repeat: repeat;
+    }
+
+
+    .页面_头部 {
+        display: flex;
+        background-color: #FFF;
+        display: flex;
+        align-items: center;
+        padding: 0 0.5rem;
+        /* 垂直居中 */
+        justify-content: space-between;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: 999;
+        min-width: 320px;
+        box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.15);
+    }
+
+
+    .标识_口号 {
+        padding: 0 1rem 0 2.5rem;
+    }
+
+    .标识_口号 img {
+        width: 1.5rem;
+        top: 0.7rem;
+        left: 1rem;
+    }
+
+    .标识_口号 h1 {
+        background-size: 1.3rem;
+        font-size: 1.3rem;
+        padding-right: 0.5rem;
+        color: #333;
+    }
+
+    .标识_口号 p {
+        display: inline;
+        font-size: 0.9rem;
+    }
+
+
+    .头部_菜单 a,
+    .头部_菜单 a:active,
+    .头部_菜单 a:link {
+        font-size: 0.9rem;
+        padding: 0.8rem 0.5rem;
+        color: #666;
+    }
+
+    .头部_菜单 a:hover {
+        color: #000;
+        font-weight: bolder;
+    }
+
+    .头部_菜单 a.激活 {
+        font-size: 1.0rem;
+        color: #000;
+    }
+    .头部_菜单 a.登录_用户组 span{
+        font-size: 0.75rem;
+    }
+    .神煞筛选 .列 {
+        flex: 0 0 calc(100% / 4);
+        height: 35px;
+    }
+
+    .页面_主体 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* background-color: #f5f5f5; */
+        border-radius: 0.3rem;
+        margin: auto;
+        max-width: 1650px;
+
+        /* padding: 0 0.3rem; */
+        /* box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.7); */
+    }
+
+    .区块_容器_一级 {
+        flex: 1 1 calc(94% / 4);
+        padding: 0.5%;
+        min-width: 400px;
+        /* background-color: #f9f9f9; */
+        /* border-right: 2px solid #e6e6e6; */
+
+    }
+
+    .区块_容器_一级 .区块_容器_二级:first-child .区块_标题 {
+        border-top: none;
+    }
+
+
+
+    .区块_容器_二级 {
+
+        /* padding: 0.3rem;
+        border: 2px solid #e6e6e6; */
+        margin-bottom: 0.3rem;
+        background-color: #FFF;
+        /* background-color: #DCD2C6; */
+        /* border: 1px solid rgba(0, 0, 0, .125); */
+        border-radius: .25rem;
+        box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+       
+    }
+
+
+    .区块_内容 {
+        height: auto;
+        padding: 0.3rem 0.1rem;
+        margin: 0;
+        /* 展开时移除高度限制 */
+    }
+
+
+
+    .命主 {
+        border-radius: 0.25rem;
+        padding: 0.5rem 0 0.5rem 0;
+        background-color: #000;
+        position: relative;
+        border: none;
+    }
+
+
+    .命主_信息 {
+        padding: 0 0.3rem;
+        white-space: nowrap;
+        position: relative;
+        min-width: 400px;
+    }
+
+    .命主_姓名 {
+        font-size: 1.5rem;
+        cursor: default;
+        padding: 0.5rem 130px 0.5rem 0.2rem;
+        display: block;
+        position: relative;
+        font-weight: bolder;
+
+    }
+
+    .命主_阴阳 {
+        padding: 0.1rem 0.2rem;
+        margin: 0;
+        font-size: 1.2rem;
+        cursor: default;
+        display: inline-block;
+        font-weight: bolder;
+    }
+
+    .命主_生辰 {
+        line-height: 1.3;
+        font-size: 0.8rem;
+        margin: 0.4rem 1.0rem 0 0;
+        padding: 0;
+
+    }
+
+    .命主_生辰 ul {
+        margin: 5px 1.0rem;
+
+    }
+
+    .命主_生辰 li {
+        white-space: nowrap;
+        overflow: hidden;
+        /* 如果需要的话，可以隐藏溢出的文本 */
+        text-overflow: ellipsis;
+        /* 如果需要的话，可以在溢出的文本处添加省略号 */
+    }
+
+    .命主 .二维码{
+        position: absolute;
+        bottom: 0.6rem;
+        right: 0.6rem;
+        width: 70px;
+        height: 70px;
+        padding: 3px;
+        background-color: #FFF;
+    }
+    .命主 .二维码 canvas {
+        display: none;
+    }
+
+    .命主 .二维码 img {
+        display: block !important;
+        width: 100%;
+    }
+
+
+    .按钮组 {
+        position: absolute;
+        right:-1px;
+        top: 10px;
+    }
+
+    .按钮组 a {
+        position: static;
+        margin: 0 0.1rem;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: center center;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+    }
+
+    .按钮组 a:hover {
+        background-size: 25px;
+    }
+
+    .按钮组 a span {
+        /* display: none; */
+    }
+
+    .按钮_保存 {
+        position: static;
+        background-image: url(../images/baocun.svg);
+    }
+
+    .按钮_删除 {
+        /* position: static;
+        background-image: url(../images/shanchu.svg); */
+    }
+
+    a.按钮_二维码 {
+        position: static;
+        background-image: url(../images/erweima.svg);
+        background-color: inherit;
+    }
+
+    .按钮_二维码 img {
+        display: none !important;
+
+    }
+
+    .按钮_二维码 canvas {
+        display: none;
+    }
+
+    .按钮_二维码:hover img {
+        display: block !important;
+        position: absolute;
+        bottom: -135px;
+        left: 0%;
+        width: 120px;
+        height: 120px;
+        padding: 5px;
+        background-color: #FFF;
+        z-index: 999;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+
+
+
+    .区块_容器_二级 {
+        margin-bottom: 1.0rem;
+    }
+
+    .区块_容器_二级 .区块_标题 {
+        /* border-top:none;
+        border-bottom: 2px solid #e6e6e6; */
+        position: relative;
+        padding: 0.7rem 0;
+        border: none;
+        background-color: rgba(0, 0, 0, .02);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+    }
+
+    .区块_容器_二级 .区块_标题 h3 {
+        font-size: 1.0rem;
+        /* font-weight: normal; */
+    }
+
+    .区块_容器_二级 .区块_标题 .功能 {
+        position: absolute;
+        right: 0.5rem;
+        bottom: 3px;
+    }
+
+    .区块_容器_二级 .区块_标题_弱 {
+        border: none;
+        border-top: 2px solid #f5f5f5;
+        position: relative;
+        padding: 0.7rem 0rem;
+        color: #999;
+    }
+
+    .区块_容器_二级 .区块_标题_弱 h3 {
+        font-size: 0.9rem;
+        font-weight: normal;
+    }
+
+    .区块_容器_二级 .区块_标题_弱 div {
+        position: absolute;
+        right: 0rem;
+        bottom: 3px;
+    }
+
+    .弹窗_主体 .区块_容器_二级 {
+        border: none !important;
+        border-radius: .0rem !important;
+        box-shadow: none !important;
+    }
+
+
+
+
+    .选项卡_按钮组 {}
+
+    .选项卡_按钮组 button {
+        border: none;
+        font-size: 0.9rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        padding: 0.5rem 1.0rem;
+        background-color: rgba(255, 255, 255, 0.7);
+        margin-right: 1px;
+
+    }
+
+
+
+
+    .筛选列表 .筛选块 .筛选标题 {
+        font-size: 0.90rem;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+.旋转360 {
+    animation: 旋转360 9s linear infinite;
+}
+
+@keyframes 旋转360 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

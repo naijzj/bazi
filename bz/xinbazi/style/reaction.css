@@ -1,0 +1,317 @@
+/* 合话反应 */
+.合冲破害 {
+    line-height: 1.2;
+}
+
+
+.合冲破害 .列 {
+    display: flex;
+    text-align: center;
+    position: relative;
+    height: 25px;
+    cursor: pointer;
+}
+
+.合冲破害 .列 div {
+    position: absolute;
+    text-align: center;
+}
+
+
+.合冲破害 .成象::before,
+.合冲破害 .化成::before,
+.合冲破害 .未成::before {
+    content: "";
+    position: absolute;
+    top: 48%;
+    z-index: 0;
+    border-bottom: 2px dashed #999;
+}
+
+.合冲破害 .化成::before {
+    border-bottom: 4px solid #D33B3C;
+}
+
+.合冲破害 .未成::before {
+    border-bottom: 1px dashed #bfbfbf;
+}
+
+.合冲破害 .干支 {
+    position: relative;
+    background-color: #FFF;
+    border: 1px solid #FFF;
+    padding: 0.1rem 0.5rem;
+    border-radius: 2rem;
+    z-index: 1;
+    color: #CCC;
+}
+
+.合冲破害 .合化 {
+    position: relative;
+    padding: 0.1rem 0.3rem;
+    font-size: 0.9rem;
+    border-radius: 2rem;
+    z-index: 1;
+}
+
+
+.合冲破害 .高亮{
+    background-color:#FFF;
+    border: 1px solid #DDD;
+    font-weight: bolder;
+    color: #000;
+
+}
+
+.合冲破害 .年,
+.合冲破害 .月,
+.合冲破害 .日,
+.合冲破害 .时,
+.合冲破害 .大运,
+.合冲破害 .流年,
+.合冲破害 .流月 {
+    width: calc(100% / 7);
+    position: absolute;
+
+}
+
+.合冲破害 .年 {
+    left: calc((100% / 7)*0);
+    ;
+
+}
+
+.合冲破害 .月 {
+    left: calc((100% / 7)*1);
+    ;
+}
+
+.合冲破害 .日 {
+    left: calc((100% / 7)*2);
+    ;
+}
+
+.合冲破害 .时 {
+    left: calc((100% / 7)*3);
+    ;
+}
+
+.合冲破害 .大运 {
+    left: calc((100% / 7)*4);
+    ;
+}
+
+.合冲破害 .流年 {
+    left: calc((100% / 7)*5);
+    ;
+}
+
+.合冲破害 .流月 {
+    left: calc((100% / 7)*6);
+    ;
+}
+
+
+
+
+
+
+
+
+/* 年 */
+.年月,
+.年日,
+.年时,
+.年大运,
+.年流年,
+.年流月 {
+    left: 0;
+}
+
+.年月::before,
+.年日::before,
+.年时::before {
+    left: calc(((100%/3)/2)/1);
+    right: calc(((100%/3)/2)/1);
+}
+
+.年流年::before,
+.年流月::before {
+    left: calc(((100%/3)/2)/3);
+    right: calc(((100%/3)/2)/3);
+}
+
+.年月 {
+    width: calc((100% / 7)*2);
+}
+
+.年月::before {
+    left: calc(((100%/3)/2)/1);
+    right: calc(((100%/3)/2)/1);
+}
+
+.年日 {
+    width: calc((100% / 7)*3);
+}
+
+.年时 {
+    width: calc((100% / 7)*4);
+}
+
+.年大运 {
+    width: calc((100% / 7)*5);
+}
+.年大运::before {
+    left: calc(((100%/3)/2)/2.5);
+    right: calc(((100%/3)/2)/2.5);
+}
+.年流年 {
+    width: calc((100% / 7)*6);
+}
+
+.年流月 {
+    width: calc((100% / 7)*7);
+
+}
+
+/* 月 */
+.月日,
+.月时,
+.月大运,
+.月流年,
+.月流月 {
+    left: calc((100% / 7)*1);
+}
+
+.月日::before,
+.月时::before,
+.月大运::before {
+    left: calc(((100%/3)/2)/1);
+    right: calc(((100%/3)/2)/1);
+}
+
+.月流年::before,
+.月流月::before {
+    left: calc(((100%/3)/2)/2.5);
+    right: calc(((100%/3)/2)/2.5);
+}
+
+.月日 {
+    width: calc((100% / 7)*2);
+}
+
+.月时 {
+    width: calc((100% / 7)*3);
+}
+
+.月大运 {
+    width: calc((100% / 7)*4);
+}
+.月流年 {
+    width: calc((100% / 7)*5);
+}
+
+.月流月 {
+    width: calc((100% / 7)*6);
+}
+
+
+/* 日 */
+.日时,
+.日大运,
+.日流年,
+.日流月 {
+    left: calc((100% / 7)*2);
+}
+
+.日时::before,
+.日大运::before,
+.日流年::before {
+    left: calc(((100%/3)/2)/1);
+    right: calc(((100%/3)/2)/1);
+}
+
+.日流月::before {
+    left: calc(((100%/3)/2)/2.5);
+    right: calc(((100%/3)/2)/2.5);
+}
+
+.日时 {
+    width: calc((100% / 7)*2);
+}
+.日大运 {
+    width: calc((100% / 7)*3);
+}
+
+.日流年 {
+    width: calc((100% / 7)*4);
+}
+
+.日流月 {
+    width: calc((100% / 7)*5);
+}
+
+
+/* 时 */
+.时大运,
+.时流年,
+.时流月 {
+    left: calc((100% / 7)*3);
+}
+.时大运::before,
+.时流年::before,
+.时流月::before {
+    left: calc(((100%/3)/2)/1);
+    right: calc(((100%/3)/2)/1);
+}
+
+.时大运 {
+    width: calc((100% / 7)*2);
+}
+.时流年 {
+    width: calc((100% / 7)*3);
+}
+.时流月 {
+    width: calc((100% / 7)*4);
+}
+
+
+
+/* 大运 */
+.大运流年,
+.大运流月 {
+    left: calc((100% / 7)*4);
+}
+.大运流年::before,
+.大运流月::before {
+    left: calc(((100%/3)/2)/1);
+    right: calc(((100%/3)/2)/1);
+}
+.大运流年 {
+    width: calc((100% / 7)*2);
+}
+.大运流月 {
+    width: calc((100% / 7)*3);
+}
+
+
+
+/* 流年 */
+.流年流月 {
+    left: calc((100% / 7)*5);
+    width: calc((100% / 7)*2);
+}
+.流年流月::before {
+    left: calc(((100%/3)/2)/1);
+    right: calc(((100%/3)/2)/1);
+}
+
+
+
+
+@media (min-width: 700px) {
+    .合冲破害 {
+        line-height: 1.5;
+    }
+
+}

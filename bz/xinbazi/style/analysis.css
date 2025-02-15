@@ -1,0 +1,174 @@
+.分析列表 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+}
+
+.分析列表 .列 {
+    flex: 0 0 calc(100% / 2);
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.分析列表 .类型 {
+    width: 50px;
+    text-align: right;
+    padding-right: 1rem;
+    /* flex: 0 0 calc(100% / 4); */
+}
+
+.分析列表 .类型 strong {
+    font-size: 0.9rem;
+    line-height: 1.0;
+    padding: 0.3rem 0;
+    font-weight: normal;
+}
+
+.分析列表 .类型 span {
+    display: block;
+    font-size: 0.65rem;
+    padding: 0.1rem 0;
+}
+
+
+.分析列表 .大 .类型 strong {
+    font-size: 1.2rem;
+    font-weight: bolder;
+
+}
+
+.分析列表 .大 .类型 span {
+    font-size: 0.9rem;
+}
+
+.分析列表 .数值 {
+    flex: 1;
+
+}
+
+.分析列表 .原值,
+.分析列表 .运值,
+.分析列表 .现值,
+.分析列表 .初始值 {
+    background-color: #DDD;
+    height: 10px;
+    margin-bottom: 1px;
+    font-size: 0.6rem;
+    color: #bababa;
+}
+
+.分析列表 .现值 {
+    height: 17px;
+    font-size: 0.9rem;
+    line-height: 17px;
+    color: #333;    
+}
+.分析列表 .数值{
+    position: relative;
+}
+.分析列表 .数值 div span {
+    position: absolute;
+    right: 0;
+}
+
+
+
+.用神喜忌 {
+
+}
+.用神喜忌_容器{
+    display: flex;
+    flex-wrap: wrap;
+    /* 允许flex子项换行 */
+    justify-content: flex-start;
+    /* 子项在主轴上的对齐方式 */
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+
+.用神喜忌 .列 {
+    background-color: #F5F5F5;
+    flex: 1 1 calc(100% / 7);
+    text-align: center;
+    margin: 1px;
+}
+
+.用神喜忌 .标题 {
+    padding: 0.3rem 0;
+
+}
+
+.用神喜忌 .喜忌 {
+    padding: 0.3rem 0;
+    height: 20px;
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
+.用神喜忌 .喜 {}
+
+.用神喜忌 .忌 {}
+
+.用神喜忌 .来源 {
+    padding: 0.3rem 1.0rem;
+    font-size: 1.1rem;
+}
+.用神喜忌 .断语{
+    text-align: right;
+    font-size: 0.7rem;
+    padding:0.3rem 0.5rem;
+    color: #666;
+}
+.用神喜忌 .断语 p{
+    font-size: 0.9rem;
+    text-align: left;
+    padding:0.3rem 0.3rem;
+}
+
+.简批{
+    margin: 0.5rem;
+}
+.简批 .区域{
+    padding: 0.3rem 0.5rem;
+}
+.简批 .行{
+    padding: 0.2rem 0.3rem;
+    background-color: #F5F5F5;
+    margin-bottom: 0.2rem;
+    border-radius: 0.5rem;
+    padding-left: 2.0rem;
+    position: relative;
+}
+.简批 .分类{
+    font-size: 0.9rem;
+}
+.简批 .内容{  font-size: 0.9rem;
+line-height: 150%;}
+.简批 .来源{}
+.简批 .低{
+    background-color: #DDD;
+}
+.简批 .中{
+    background-color: #6fc297;
+}
+.简批 .高{
+    background-color: #f46749;
+}
+.简批 .吉{
+    background-color: #6fc297;
+}
+.简批 .凶{
+    background-color: #f46749;
+}
+
+.简批 .能量权重{
+    font-size: 0.75rem;
+    padding: 0.2rem 0.2rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    left: 0.4rem;
+    top: 0.4rem;
+
+}
+.简批 .判断权重{}

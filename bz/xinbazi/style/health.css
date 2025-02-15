@@ -1,0 +1,120 @@
+
+.健康分析{
+    display: flex;
+    flex-wrap: wrap; /* 允许flex子项换行 */
+    justify-content: flex-start; /* 子项在主轴上的对齐方式 */
+    align-items: flex-start; /* 顶部对齐 */
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 0.3rem;
+}
+.人体区域{
+    flex: 0 0 calc(45%);
+    text-align: center;
+    padding-top: 3.0rem;
+}
+.人体区域 svg{
+    max-width: 170px;
+    margin: auto;
+}
+.身体边框{
+    fill: #eaeaea;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 3px;
+}
+
+
+.脏腑外框 {
+    fill: none;
+  }
+
+.五脏六腑{
+    flex: 0 0 calc(55%);
+    display: flex;
+    flex-wrap: wrap; /* 允许flex子项换行 */
+    justify-content: flex-start; /* 子项在主轴上的对齐方式 */
+    align-items: flex-start; /* 顶部对齐 */
+}
+.五脏六腑 .脏腑{
+    flex: 0 0 calc(32%);
+    text-align: center;
+    margin-bottom: 0.5rem;
+
+}
+.五脏六腑 .脏腑 svg{
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    fill: #eaeaea;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 3px;
+}
+.五脏六腑 .标题{
+    color: #666;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+
+.健康警示{
+    fill: #ff3e7e;
+}
+.健康警示 svg g{
+    fill: #ff3e7e;
+}
+
+
+
+
+.低风险{
+    fill: #eaeaea;
+    background-color:#eaeaea;
+}
+.低风险 svg g{
+    fill: #eaeaea;
+}
+
+
+.中风险{
+    fill: #ed822a;
+    background-color:#ed822a;
+}
+.中风险 svg g{
+    fill: #ed822a;
+}
+.高风险{
+    fill: #ff3e7e;
+    background-color:#ff3e7e;
+}
+.高风险 svg g{
+    fill: #ff3e7e;
+}
+
+
+
+.健康色标表{ line-height: 20px; font-size: 0.85rem;
+    margin: 0.5rem 1.0rem;
+}
+.健康色标表 .色标列{
+    display: inline-block;
+    margin: 2px 10px;
+}
+.健康色标表 .色标{ width: 10px;  height: 10px; display: inline-block;}
+.健康色标表 .标题{ display: inline-block; height: 20px;}
+
+.说明{
+    line-height: 20px; font-size: 0.85rem;
+    margin: 0.5rem 1.0rem;    
+    color: #666;
+    font-size: 0.75rem;
+    text-align: left;
+}
+
+.说明 ul{}
+.说明 li{
+    list-style-type: decimal;
+    line-height: 150%;
+    margin: 0px 1rem 10px 15px;    
+}
+
