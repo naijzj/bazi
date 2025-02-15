@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>八字算命</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        input[type="number"] {
+            width: 60px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>八字算命</h1>
+        <form id="bazi-form">
+            <label for="year">年份：1900-2099</label>
+            <input type="number" id="year" name="year" min="1900" max="2099" required>
+            <br><br>
+            <label for="month">月份：1-12</label>
+            <input type="number" id="month" name="month" min="1" max="12" required>
+            <br><br>
+            <label for="day">日期：1-31</label>
+            <input type="number" id="day" name="day" min="1" max="31" required>
+            <br><br>
+            <label for="hour">小时：0-23</label>
+            <input type="number" id="hour" name="hour" min="0" max="23" required>
+            <br><br>
+            <button type="submit">获取八字</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        // 获取表单元素
+        const form = document.getElementById('bazi-form');
+        const resultDiv = document.getElementById('result');
+
+        // 阻止表单默认提交并发送请求到后端
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const year = formData.get('year');
+            const month = formData.get('month');
+            const day = formData.get('day');
+            const hour = formData.get('hour');
+
+            try {
+                // 发送请求到后端
+                const response = await fetch(`/api/bazi?year=${year}&month=${month}&day=${day}&hour=${hour}`);
+                const data = await response.json();
+
+                // 根据返回的data更新页面
+                if (data.error) {
+                    resultDiv.innerHTML = `<p style="color: red;">${data.error}</p>`;
+                } else {
+                    resultDiv.innerHTML = `
+                        <h3>八字信息</h3>
+                        <p>年：${data.year}</p>
+                        <p>月：${data.month}</p>
+                        <p>日：${data.day}</p>
+                        <p>时：${data.time}</p>
+                    `;
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                resultDiv.innerHTML = '<p style="color: red;">计算八字时出错，请检查输入！</p>';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Author: 钉钉或微信pythontesting 钉钉群21734177 
+# CreateDate: 2019-2-21
 
 import argparse
 from datas import shengxiaos, zhi_atts
@@ -14,7 +18,7 @@ parser = argparse.ArgumentParser(description=description,
                                  formatter_class=argparse.RawTextHelpFormatter)
 parser.add_argument('shengxiao', action="store", help=u'生肖')
 parser.add_argument('--version', action='version',
-                    version='%(prog)s 0.1 +微:Carlos-Dalsen')
+                    version='%(prog)s 0.1 Rongzhong xu 2019 03 06 钉钉或微信pythontesting')
 options = parser.parse_args()
 
 if options.shengxiao not in shengxiaos.inverse:
@@ -26,7 +30,7 @@ else:
     print("你的年支是：", zhi)
     print("="*80) 
     print("合生肖是合八字的一小部分，有一定参考意义，但是不是全部。") 
-    print("合婚请以八字为准，技术支持：+微:Carlos-Dalsen") 
+    print("合婚请以八字为准，技术支持：钉钉或微信pythontesting") 
     print("以下为相合的生肖：") 
     print("="*80) 
     output("与你三合的生肖：", '合')  

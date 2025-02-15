@@ -1,4 +1,7 @@
-
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Author: 钉钉、抖音或微信pythontesting 钉钉群21734177
+# CreateDate: 2019-2-21
 
 import argparse
 import collections
@@ -12,6 +15,7 @@ from datas import *
 from sizi import summarys
 from common import *
 from yue import months
+def main(year, month, day, time):
 
 def get_gen(gan, zhis):
     zhus = []
@@ -280,7 +284,7 @@ for item in zhi_3hes:
 print('\033[1;36;40m' + ' '.join(list(gans)), ' '*5, ' '.join(list(gan_shens)) + '\033[0m',' '*5, out,)
 out = ''
 
-print('\033[1;36;40m' + ' '.join(list(zhis)), ' '*5, ' '.join(list(zhi_shens)) + '\033[0m', ' '*5, out, "解读+微:Carlos-Dalsen")
+print('\033[1;36;40m' + ' '.join(list(zhis)), ' '*5, ' '.join(list(zhi_shens)) + '\033[0m', ' '*5, out, "解读:钉ding或v信pythontesting")
 print("-"*120)
 print("{1:{0}^15s}{2:{0}^15s}{3:{0}^15s}{4:{0}^15s}".format(chr(12288), '【年】{}:{}{}{}'.format(temps[gans.year],temps[zhis.year],ten_deities[gans.year].inverse['建'], gan_zhi_he(zhus[0])), 
     '【月】{}:{}{}{}'.format(temps[gans.month],temps[zhis.month], ten_deities[gans.month].inverse['建'], gan_zhi_he(zhus[1])),
@@ -2458,7 +2462,7 @@ if tianyin[me] in zhis:
 
 
 short = min(scores, key=scores.get)
-print("\n\n五行缺{}的建议 ".format(short))    
+print("\n\n五行缺{}的建议参见 http://t.cn/E6zwOMq".format(short))    
 
     
     

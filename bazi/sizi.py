@@ -1,4 +1,7 @@
-
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Author:  钉钉或微信pythontesting
+# CreateDate: 2019-2-21
 
 summarys = {
     '甲日甲子': '''
